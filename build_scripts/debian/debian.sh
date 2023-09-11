@@ -93,17 +93,17 @@ function download_newsup {
     then
 	if [[ ! -d NewsUP ]]
 	then
-	    git clone https://github.com/demanuel/NewsUP.git
+	    git clone https://github.com/HengeDK/BotZUp.git
 	fi
     else
 	if [ "$downloader" = "wget" ]
 	then
-	    wget https://github.com/demanuel/NewsUP/archive/master.zip
+	    wget https://github.com/HengeDK/BotZUp/archive/master.zip
 	else
-	    curl -O -L https://github.com/demanuel/NewsUP/archive/master.zip
+	    curl -O -L https://github.com/HengeDK/BotZUp/archive/master.zip
 	fi
 	unzip master.zip
-	mv NewsUP-master NewsUP
+	mv BotZUp-master BotZUp
     fi
   
 }
